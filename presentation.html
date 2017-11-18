@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WebSlides Portfolios: Showcase your work</title>
+    <meta name="description" content="WebSlides is the easiest way to make HTML presentations and portfolios. It's simple, fast, and free.">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" type='text/css' media='all' href="./css/webslides.css">
+
+    <link rel="stylesheet" type="text/css" media="all" href="./css/svg-icons.css">
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section class="bg-primary">
+         <span class="background dark" style="background-image:url('https://source.unsplash.com/oHrodCLNnU8/')"></span>
+          <div class="wrap aligncenter">
+            <h1 class="text-landing">My Presentation</h1>
+            <p class="text-symbols">* * * </p>
+          </div>
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <p class="text-subtitle">Empty</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <ul class="flexblock activity">
+              <li>
+                <a href="#" title="VP of Designer at ACME">
+                  <p class="year">
+                    2016
+                  </p>
+                  <p class="title">
+                    VP of Designer at ACME
+                  </p>
+                  <p class="summary">
+                    This is a job description for the VP of Design role at ACME. Be concise. Content like a tweet: 2-3 lines recommended.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Co-Founder of Delta">
+                  <p class="year">
+                    2015
+                  </p>
+                  <p class="title">
+                    Co-Founder of Delta
+                  </p>
+                  <p class="summary">
+                    The culture within an organization is an essential part for success. This is a job description. Be concise. 2-3 lines recommended.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Co-Founder of GAMMA">
+                  <p class="year">
+                    2013
+                  </p>
+                  <p class="title">
+                    Interaction Designer at GAMMA
+                  </p>
+                  <p class="summary">
+                    Authority is distributed, though not evenly or permanently. Keep it simple. Be concise. 2-3 lines recommended.
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="./js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="./js/svg-icons.js"></script>
+
+  </body>
+</html>
